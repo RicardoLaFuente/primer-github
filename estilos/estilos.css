@@ -1,0 +1,448 @@
+body {background-image:
+    url(../imagenes/fondo\ pagina.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.imgTitulo {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    border: 0;
+
+}
+
+
+.menu {
+    position: sticky;
+    top: 0px;
+    
+}
+
+.menuQuieto li {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 5px;
+    border-bottom: 2px groove rgb(65, 121, 115) ;
+    background-color:rgb(90, 165, 159);
+    color: white;
+}
+.menuQuieto {
+    padding: 0;
+}
+
+.menuQuieto a {
+    text-decoration: none;
+    
+}
+
+.envios {
+    background-color: rgb(90, 165, 159);
+   
+    border: 3px dotted black;
+    margin: 20px;
+    position: center;
+    
+    
+    text-align: center;
+    
+}
+
+.envios h4 {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 30px 0px;
+    color: white;
+}
+
+.envios p {
+
+font-weight: bold;
+font-size: 20px;
+font-family: cursive;
+color: aliceblue;
+}
+
+article h3 {
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+    
+}
+
+article .imgChuli {
+    width: 250px;
+    margin-top: 5px;
+}
+
+.parrafoChuli {
+     color: darkcyan;
+     border: 1px dotted black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+
+    }
+
+    .footer a {
+        display: inline-block;
+        text-decoration:none;
+        background-color: grey;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        border-bottom:solid black 2px;
+        width: 200px;
+        height: 30px;
+        margin: 10px;
+    }
+
+.imgDestacados {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        color: darkolivegreen;
+}
+
+.imgDestacados img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+.imgCatalogo img {
+    width: 300px;
+    height: 300px;
+    padding: auto;
+    margin: 30px;
+    border: 1px dotted coral;
+
+}
+
+.textoCatalogo {
+
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0;
+    
+}
+
+.imgCatalogo li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin: 40px 5px 20px 5px;
+    list-style:circle;
+    
+}
+
+.contacto {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.contacto h3 {
+    font-size: 40px;
+    font-style:italic;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.contacto label{
+    display: block;
+}
+
+.contacto input {
+    margin-bottom: 30px;
+}
+
+.contactoCartel {
+    font-size: 40px;
+    font-style: oblique;
+    color: darkslategrey;
+    margin: 10px;
+    padding: center;
+    border: double 3px rgb(90, 165, 159);
+    text-align: center;
+}
+
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 1fr 0.5fr  0.1fr;
+    justify-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-areas: 
+     "header header"
+     "nav nav"
+     "main main"
+     "section section"
+     "footer footer";
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.3fr 2.5fr  0.1fr;
+    justify-items: stretch;
+    grid-template-areas: 
+     "header header"
+     "nav nav"
+     "envios envios"
+     "section section"
+     "footer footer"
+
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;   
+}
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+section {
+    grid-area: section;
+}
+
+.envios {
+    grid-area: envios;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.catalogoFlex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: stretch;
+
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.menuQuieto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+@media screen and (max-width:1160px){
+    .imgCatalogo img {
+        width: 190px;
+        height: 190px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .menuQuieto li {
+        font-size: 20px;
+    }
+    .imgCatalogo img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:680px) {
+    .menuQuieto li {
+        font-size: 20px;
+    }
+    .imgCatalogo img {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+}
+
+
+    
+@media screen and (max-width: 490px) {
+    .menuQuieto {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;        
+    }
+    .menu {
+        position: relative;
+    }
+    
+
+    .imgDestacados img {
+        width: 100px;
+        height: 100px;
+        
+    }
+    article .imgChuli {
+        width: 130px;
+        
+    }
+    .parrafoChuli {
+        color: darkcyan;
+        border: 1px dotted black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 10px;
+   
+    }
+    .envios {
+        background-color: rgb(90, 165, 159);
+       
+        border: 2px dotted black;
+        margin: 10px;
+        position: center;
+        
+        
+        text-align: center;
+        
+    }
+    .principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr  0.1fr;
+        justify-items: stretch;
+        justify-content: stretch;
+        align-items: stretch;
+        grid-template-areas: 
+         "header header"
+         "nav nav"
+         "main main"
+         "section section"
+         "footer footer";
+    }
+    
+    .catalogo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.1fr 0.3fr 2.5fr  0.1fr;
+        justify-items: stretch;
+        grid-template-areas: 
+         "header header"
+         "nav nav"
+         "envios envios"
+         "section section"
+         "footer footer"
+    
+    }
+    
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;   
+    }
+    main {
+        grid-area: main;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    section {
+        grid-area: section;
+    }
+    
+    .envios {
+        grid-area: envios;
+    }
+
+    .envios {
+        background-color: rgb(90, 165, 159);
+       
+        border: 3px dotted black;
+        margin: 20px;
+        position: center;
+        
+        
+        text-align: center;
+        
+    }
+    
+    .envios h4 {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 30px 0px;
+        color: white;
+    }
+    
+    .envios p {
+    
+    font-weight: bold;
+    font-size: 10px;
+    font-family: cursive;
+    color: aliceblue;
+    }
+    
+    .contacto {
+        font-size: 15px;
+        margin: 15px;
+    }
+    
+    .contacto h3 {
+        font-size: 30px;
+        font-style:italic;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .contacto label{
+        display: block;
+    }
+    
+    .contacto input {
+        margin-bottom: 20px;
+    }
+    
+    .contactoCartel {
+        font-size: 30px;
+        font-style: oblique;
+        color: darkslategrey;
+        margin: 10px;
+        padding: center;
+        border: double 3px rgb(90, 165, 159);
+        text-align: center;
+    }
+    .imgCatalogo img {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .imgCatalogo li {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        margin: 30px 5px 15px 5px;
+        list-style:circle;
+        
+    }
+    .textoCatalogo {
+
+        font-family: fantasy;
+        font-size: 30px;
+        text-align: center;
+        margin: 30px 0;
+        
+    }
+    
+
+
+
+}

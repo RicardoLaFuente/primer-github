@@ -39,8 +39,32 @@ body {background-image:
     
 }
 
+@keyframes enviosAnime {
+    0% {
+        background-color: rgb(90, 165, 159);
+    }
+    20% {
+        background-color: rgb(120, 194, 188);
+    }
+    40% {
+        background-color: rgb(150, 212, 207);
+    }
+    60% {
+        background-color: rgb(188, 243, 238);
+    }
+    80% {
+        background-color: rgb(150, 212, 207);
+    }
+    100% {
+        background-color: rgb(120, 194, 188);
+    }
+}
+
 .envios {
-    background-color: rgb(90, 165, 159);
+    animation-name: enviosAnime;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
    
     border: 3px dotted black;
     margin: 20px;
@@ -63,7 +87,7 @@ body {background-image:
 font-weight: bold;
 font-size: 20px;
 font-family: cursive;
-color: aliceblue;
+color: black;
 }
 
 article h3 {
@@ -75,8 +99,14 @@ article h3 {
 }
 
 article .imgChuli {
-    width: 250px;
+    width: 200px;
     margin-top: 5px;
+    transition: all 3s;
+    filter: grayscale(100%);
+}
+article .imgChuli:hover {
+    width: 250px;
+    filter: none;
 }
 
 .parrafoChuli {
@@ -291,7 +321,12 @@ section {
     .imgDestacados img {
         width: 100px;
         height: 100px;
+      
         
+    }
+    .imgDestacados :hover{   
+        transform: scale(1.8);
+        border: solid rgb(92, 192, 135) 2px;
     }
     article .imgChuli {
         width: 130px;

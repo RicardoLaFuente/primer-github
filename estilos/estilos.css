@@ -1,7 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
+}
+
+.row {
+    --bs-gutter-x: none;
 }
 
 body {
@@ -9,6 +13,7 @@ body {
         url(../imagenes/fondo\ pagina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: auto;
 }
 
 
@@ -74,13 +79,16 @@ body {
 }
 
 .envios {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     animation-name: enviosAnime;
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
     border: 3px dotted black;
-    margin: 10px;
+    margin: 10px 10px;
     position: center;
     text-align: center;
 
@@ -130,6 +138,7 @@ article .imgChuli:hover {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    width: 95%;
 
 }
 
@@ -170,7 +179,7 @@ article .imgChuli:hover {
 .textoCatalogo {
 
     font-family: fantasy;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     margin: 50px 0;
 
@@ -186,14 +195,14 @@ article .imgChuli:hover {
 
 .contacto {
     font-size: 30px;
-    margin: 30px;
+    margin: 0px;
 }
 
 .contacto h3 {
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     margin-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .contacto label {
@@ -201,69 +210,22 @@ article .imgChuli:hover {
 }
 
 .contacto input {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contactoCartel {
-    font-size: 40px;
+    font-size: 30px;
     font-style: oblique;
     color: darkslategrey;
     margin: 10px;
     padding: center;
     border: double 3px rgb(90, 165, 159);
     text-align: center;
+    width: 90%;
 }
 
 
-/*.principal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.1fr 1fr 0.5fr  0.1fr;
-    justify-items: stretch;
-    justify-content: stretch;
-    align-items: stretch;
-    grid-template-areas: 
-     "header header"
-     "nav nav"
-     "main main"
-     "section section"
-     "footer footer";
-}
 
-.catalogo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.1fr 0.3fr 2.5fr  0.1fr;
-    justify-items: stretch;
-    grid-template-areas: 
-     "header header"
-     "nav nav"
-     "envios envios"
-     "section section"
-     "footer footer"
-
-}
-
-header {
-    grid-area: header;
-}
-nav {
-    grid-area: nav;   
-}
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-section {
-    grid-area: section;
-}
-
-.envios {
-    grid-area: envios;
-}
 
 .articulo {
     display: flex;
@@ -279,7 +241,7 @@ section {
 
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -312,6 +274,9 @@ section {
         height: 150px;
         padding: 10px;
     }
+    .contacto {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:680px) {
@@ -343,11 +308,12 @@ section {
     .imgDestacados img {
         width: 100px;
         height: 100px;
+        margin: 5px;
 
 
     }
 
-    .imgDestacados :hover {
+    .imgDestacados img:hover {
         transform: scale(1.8);
         border: solid rgb(92, 192, 135) 2px;
     }
@@ -369,150 +335,16 @@ section {
         background-color: rgb(90, 165, 159);
 
         border: 2px dotted black;
-        
+
         position: center;
 
 
         text-align: center;
 
     }
-
-    /* .principal {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 0.5fr 0.1fr;
-        justify-items: stretch;
-        justify-content: stretch;
-        align-items: stretch;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main main"
-            "section section"
-            "footer footer";
-    }
-
-    .catalogo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 0.1fr 0.3fr 2.5fr 0.1fr;
-        justify-items: stretch;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "envios envios"
-            "section section"
-            "footer footer"
-
-    }
-
-    header {
-        grid-area: header;
-    }
-
-    nav {
-        grid-area: nav;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    footer {
-        grid-area: footer;
-    }
-
-    section {
-        grid-area: section;
-    }
-
-    .envios {
-        grid-area: envios;
-    }
-
-    .envios {
-        background-color: rgb(90, 165, 159);
-
-        border: 3px dotted black;
-        margin: 0px;
-        position: center;
-
-
-        text-align: center;
-
-    }
-
-    .envios h4 {
-        font-weight: bold;
-        font-size: 30px;
-        margin: 30px 0px;
-        color: white;
-    }
-
-    .envios p {
-
-        font-weight: bold;
-        font-size: 10px;
-        font-family: cursive;
-        color: aliceblue;
-    }
-
-    .contacto {
-        font-size: 15px;
-        margin: 15px;
-    }
-
-    .contacto h3 {
-        font-size: 30px;
-        font-style: italic;
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
-
-    .contacto label {
-        display: block;
-    }
-
-    .contacto input {
-        margin-bottom: 20px;
-    }
-
-    .contactoCartel {
-        font-size: 30px;
-        font-style: oblique;
-        color: darkslategrey;
-        margin: 10px;
-        padding: center;
-        border: double 3px rgb(90, 165, 159);
-        text-align: center;
-    }
-
-    .imgCatalogo img {
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .imgCatalogo li {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 25px;
-        margin: 30px 5px 15px 5px;
-        list-style: circle;
-
-    }
-
-    .textoCatalogo {
-
-        font-family: fantasy;
-        font-size: 30px;
-        text-align: center;
-        margin: 30px 0;
-
-    }
-
-
-
-
-}
-
+   .contactoDatos {
+      font-size: 15px;
+   }
+   .contactoCartel {
+       font-size: 15px;
+   }

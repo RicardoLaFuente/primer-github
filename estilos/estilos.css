@@ -3,6 +3,7 @@
     padding: 0;
 
 }
+
 .conteiner-fluid {
     margin: 0;
     padding: 0;
@@ -16,6 +17,9 @@ body {
     width: auto;
 }
 
+.row {
+    --bs-gutter-x: 0;
+}
 
 .menuLetras {
     display: flex;
@@ -86,7 +90,7 @@ body {
 }
 
 .destacadosLetra {
-    font-size: 6rem;
+    font-size: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -94,8 +98,7 @@ body {
 }
 
 .imgCarrusel img {
-    width: 5rem;
-    height: 30rem;
+    height: 35rem;
 }
 
 .imgCarrusel {
@@ -128,163 +131,24 @@ article h3 {
     color: darkcyan;
     border: 1px dotted black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 95%;
-
-}
-
-.footer a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: grey;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    border-bottom: solid black 2px;
-    width: 200px;
-    height: 30px;
-    margin: 10px;
-}
-
-/*.row {
-    --bs-gutter-x: none;
-}
-
-body {
-    background-image:
-        url(../imagenes/fondo\ pagina.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-}
-
-
-.imgTitulo {
-    width: 100%;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0;
-    border: 0;
-
-}
-
-
-.menu {
-    position: sticky;
-    top: 0px;
-    justify-content: center;
-    width: 90%;
-
-}
-
-.menuQuieto li {
-    display: inline-block;
     font-size: 25px;
-    margin: 5px;
-    padding: 0;
-    border-bottom: 2px groove rgb(65, 121, 115);
-    background-color: rgb(90, 165, 159);
-    color: white;
-}
-
-.menuQuieto a {
-    text-decoration: none;
-
-}
-
-@keyframes enviosAnime {
-    0% {
-        background-color: rgb(90, 165, 159);
-    }
-
-    20% {
-        background-color: rgb(120, 194, 188);
-    }
-
-    40% {
-        background-color: rgb(150, 212, 207);
-    }
-
-    60% {
-        background-color: rgb(188, 243, 238);
-    }
-
-    80% {
-        background-color: rgb(150, 212, 207);
-    }
-
-    100% {
-        background-color: rgb(120, 194, 188);
-    }
-}
-
-.envios {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    animation-name: enviosAnime;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    border: 3px dotted black;
-    margin: 10px 10px;
-    position: center;
-    text-align: center;
-
-}
-
-.envios h4 {
-    font-weight: bold;
-    font-size: 50px;
-    margin: 30px 0px;
-    color: white;
-}
-
-.envios p {
-
-    font-weight: bold;
-    font-size: 20px;
-    font-family: cursive;
-    color: black;
-}
-
-article h3 {
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    margin-bottom: 5px;
-
-}
-
-article .imgChuli {
-    width: 200px;
-    margin-top: 5px;
-    transition: all 3s;
-    filter: grayscale(100%);
-}
-
-article .imgChuli:hover {
-    width: 250px;
-    filter: none;
-}
-
-.parrafoChuli {
-    color: darkcyan;
-    border: 1px dotted black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    width: 95%;
+    padding: 5px;
+    margin: 25px 15px;
+
+}
+
+.footer {
+    background-color: #0189897a;
+    border: 2px solid black;
+}
+
+.footer h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -301,23 +165,13 @@ article .imgChuli:hover {
     margin: 10px;
 }
 
-.imgDestacados {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    color: darkolivegreen;
-}
-
-.imgDestacados img {
-    width: 200px;
-    height: 200px;
-
-}
+/* paginas catalogo */
 
 .imgCatalogo img {
     width: 300px;
     height: 300px;
-    padding: auto;
-    margin: 30px;
+    padding: 10px;
+    margin: 10px;
     border: 1px dotted coral;
 
 }
@@ -325,7 +179,7 @@ article .imgChuli:hover {
 .textoCatalogo {
 
     font-family: fantasy;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     margin: 50px 0;
 
@@ -339,8 +193,10 @@ article .imgChuli:hover {
 
 }
 
+/* pagina contacto */
+
 .contacto {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0px;
 }
 
@@ -367,52 +223,34 @@ article .imgChuli:hover {
     padding: center;
     border: double 3px rgb(90, 165, 159);
     text-align: center;
-    width: 90%;
-}
-
-
-
-
-.articulo {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.catalogoFlex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
-}
-
-.menuQuieto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-
-@media screen and (max-width:1160px) {
-    .imgCatalogo img {
-        width: 190px;
-        height: 190px;
-    }
-
 }
 
 @media screen and (max-width:768px) {
-    .menuQuieto li {
-        font-size: 20px;
+    .parrafoChuli {
+        font-size: 17px;
+    }
+
+    .destacadosLetra {
+        font-size: 75px;
+    }
+
+    .imgCarrusel img {
+        height: 25rem;
+    }
+
+    .envios h4 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 30px 0px;
+        color: white;
+    }
+
+    .envios p {
+
+        font-weight: bold;
+        font-size: 15px;
+        font-family: cursive;
+        color: black;
     }
 
     .imgCatalogo img {
@@ -426,74 +264,45 @@ footer {
     }
 }
 
-@media screen and (max-width:680px) {
-    .menuQuieto li {
-        font-size: 20px;
+@media screen and (max-width: 490px) {
+
+    .parrafoChuli {
+        font-size: 15px;
+    }
+
+    .destacadosLetra {
+        font-size: 50px;
+    }
+
+    .imgCarrusel img {
+        height: 15rem;
+    }
+
+    .envios h4 {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 30px 0px;
+        color: white;
+    }
+
+    .envios p {
+
+        font-weight: bold;
+        font-size: 10px;
+        font-family: cursive;
+        color: black;
     }
 
     .imgCatalogo img {
-        width: 150px;
-        height: 150px;
-        padding: 10px;
-    }
-}
-
-
-
-@media screen and (max-width: 490px) {
-    .menuQuieto {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;   
     }
 
-    .menu {
-        position: relative;
-    }
-
-
-    .imgDestacados img {
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-
-
-    }
-
-    .imgDestacados img:hover {
-        transform: scale(1.8);
-        border: solid rgb(92, 192, 135) 2px;
-    }
-
-    article .imgChuli {
-        width: 130px;
-
-    }
-
-    .parrafoChuli {
-        color: darkcyan;
-        border: 1px dotted black;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 10px;
-
-    }
-
-    .envios {
-        background-color: rgb(90, 165, 159);
-
-        border: 2px dotted black;
-
-        position: center;
-
-
-        text-align: center;
-
-    }
-
-    .contactoDatos {
+    .contacto {
         font-size: 15px;
     }
 
     .contactoCartel {
         font-size: 15px;
-    }*/
+    }
+}
